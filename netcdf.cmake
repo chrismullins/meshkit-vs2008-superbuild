@@ -18,8 +18,8 @@ ExternalProject_Add( ${proj}
   BINARY_DIR ${${proj}_BINARY_DIR}
   URL "ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-4.3.0.tar.gz"
   URL_MD5 40c0e53433fc5dc59296ee257ff4a813
-#  PATCH_COMMAND
-#    ${CMAKE_COMMAND} -E copy_if_different ${CMAKE_SOURCE_DIR}/patches/netcdf.src.CMakeLists2.txt <SOURCE_DIR>/CMakeLists.txt
+  PATCH_COMMAND
+    ${CMAKE_COMMAND} -E copy_if_different ${CMAKE_SOURCE_DIR}/patches/netcdf.src.CMakeLists.txt <SOURCE_DIR>/CMakeLists.txt
   CMAKE_CACHE_ARGS
     -DBUILD_SHARED_LIBS:BOOL=OFF
     -DBUILD_UTILITIES:BOOL=ON

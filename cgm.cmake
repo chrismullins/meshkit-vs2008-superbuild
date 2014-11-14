@@ -7,7 +7,7 @@ set(${proj}_INSTALL_DIR "${${proj}_ROOT_DIR}/${proj}-install")
 ExternalProject_Add( ${proj}
   DEPENDS oce
   GIT_REPOSITORY "git://github.com/chrismullins/cgma.git"
-  GIT_TAG "cmake"
+  GIT_TAG "cmake-windows-fixes"
   SOURCE_DIR "${${proj}_SOURCE_DIR}"
   BINARY_DIR "${${proj}_BINARY_DIR}"
   CMAKE_CACHE_ARGS
